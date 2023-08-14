@@ -1,10 +1,10 @@
-package contoller;
-import model.Question;
+package com.example.coursework.contoller;
+import com.example.coursework.model.Question;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import service.QuestionService;
+import com.example.coursework.service.QuestionService;
 import java.util.Collection;
 
 @RestController

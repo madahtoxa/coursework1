@@ -1,4 +1,4 @@
-package Exception;
+package com.example.coursework.Exception;
 
 public class StorageEmptyException extends RuntimeException {
     public StorageEmptyException() {

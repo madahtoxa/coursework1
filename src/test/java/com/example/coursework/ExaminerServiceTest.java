@@ -1,17 +1,16 @@
 package com.example.coursework;
 
-import model.Question;
+import com.example.coursework.model.Question;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import service.ExaminerServiceImpl;
-import service.QuestionService;
+import com.example.coursework.service.ExaminerServiceImpl;
+import com.example.coursework.service.QuestionService;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 import static org.mockito.Mockito.when;

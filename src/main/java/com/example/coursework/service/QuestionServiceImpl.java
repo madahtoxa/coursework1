@@ -1,10 +1,10 @@
-package service;
+package com.example.coursework.service;
 
-import model.Question;
+import com.example.coursework.model.Question;
 import org.springframework.stereotype.Service;
-import Exception.QuestionNotFoundException;
-import Exception.QuestionAlreadyExistsException;
-import Exception.StorageEmptyException;
+import com.example.coursework.Exception.QuestionNotFoundException;
+import com.example.coursework.Exception.QuestionAlreadyExistsException;
+import com.example.coursework.Exception.StorageEmptyException;
 
 import java.util.*;
 

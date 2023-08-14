@@ -1,8 +1,8 @@
-package service;
+package com.example.coursework.service;
 
-import model.Question;
+import com.example.coursework.model.Question;
 import org.springframework.stereotype.Service;
-import Exception.NotEnoughQuestionException;
+import com.example.coursework.Exception.NotEnoughQuestionException;
 import java.util.Collection;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

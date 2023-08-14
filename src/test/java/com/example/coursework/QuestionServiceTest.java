@@ -1,10 +1,8 @@
 package com.example.coursework;
 
-import model.Question;
-import org.junit.jupiter.api.Assertions;
+import com.example.coursework.model.Question;
 import org.junit.jupiter.api.Test;
-import service.QuestionServiceImpl;
-import service.QuestionService;
+import com.example.coursework.service.QuestionServiceImpl;
 
 import java.util.Collection;
 
@@ -32,12 +30,12 @@ public class QuestionServiceTest {
         Question q2 = service.add(new Question("Are you beautiful","Yes, of course"));
         Question q3 = service.add(new Question("Do you love me?","No"));
         Collection<Question> actual = service.getAll();
+        assertEquals(3, actual.size());
         service.remove(q1);
         service.remove(q2);
         service.remove(q3);
-        assertEquals(3, actual.size());
         assertFalse(actual.contains(q1));
-        assertTrue(actual.contains(q2));
-        assertTrue(actual.contains(q3));
+        assertFalse(actual.contains(q2));
+        assertFalse(actual.contains(q3));
     }
 }
